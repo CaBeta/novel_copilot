@@ -1,0 +1,4 @@
+files:
+  - package.json
+  - electron/main.js
+  - dist/**/*

@@ -9,8 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "electron:dev": "concurrently \"vite\" \"electron .\"",
-    "electron:build": "vite build && electron-builder"
+    "electron:dev": "NODE_ENV=development concurrently \"vite\" \"electron .\"",
+    "electron:build": "ELECTRON=true vite build && electron-builder"
   },
   "dependencies": {
     "react": "^18.3.1",
